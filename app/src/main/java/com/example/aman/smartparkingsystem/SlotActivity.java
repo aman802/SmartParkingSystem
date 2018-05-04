@@ -60,13 +60,13 @@ public class SlotActivity extends AppCompatActivity implements View.OnClickListe
                                     break;
                                 }
                                 else{
-                                    //s1.setBackground(getDrawable(R.drawable.rectangle_booked));
+                                    s1.setBackground(getDrawable(R.drawable.rectangle_booked));
                                 }
                             }
                             if(a == 2){
                                 filled = ds.getValue(Integer.class);
                                 if(filled == 0){
-                                    //s1.setBackground(getDrawable(R.drawable.rectangle_booked));
+                                    s1.setBackground(getDrawable(R.drawable.rectangle_booked));
                                 }
                                 else{
                                     s1.setBackground(getDrawable(R.drawable.rectangle_filled));
@@ -294,7 +294,7 @@ public class SlotActivity extends AppCompatActivity implements View.OnClickListe
                                                     background();
                                                 }
                                             }
-                , 1, 0, TimeUnit.MINUTES);
+                , 1, 1, TimeUnit.MINUTES);
     }
 
     @Override
